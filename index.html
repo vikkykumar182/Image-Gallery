@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <header>
+            <h1>Image Gallery</h1>
+            <div class="filters">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="nature" class="filter-btn">Nature</button>
+                <button data-filter="architecture" class="filter-btn">Architecture</button>
+                <button data-filter="people" class="filter-btn">People</button>
+            </div>
+        </header>
+        <div class="gallery">
+            <div class="gallery-item nature"><img src="nature1.jpg" alt="Nature"></div>
+            <div class="gallery-item architecture"><img src="architecture1.jpg" alt="Architecture"></div>
+            <div class="gallery-item people"><img src="people1.jpg" alt="People"></div>
+            <div class="gallery-item nature"><img src="nature2.jpg" alt="Nature"></div>
+            <div class="gallery-item architecture"><img src="architecture2.jpg" alt="Architecture"></div>
+            <div class="gallery-item people"><img src="people2.jpg" alt="People"></div>
+        </div>
+        <div class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-img" src="" alt="">
+            <div class="navigation">
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
